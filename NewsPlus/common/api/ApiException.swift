@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ApiException: Error {
+class ApiException: Error, Decodable {
     // MARK: - properties.
     let statusCode: ApiStatusCode
     var description: String {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ApiStatusCode: Int {
+enum ApiStatusCode: Int, Decodable {
     case unknown = -1
     case unauthorized = 401
     case badRequest = 400
